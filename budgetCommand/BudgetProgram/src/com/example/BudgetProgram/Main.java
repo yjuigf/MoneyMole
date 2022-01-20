@@ -18,22 +18,15 @@ public class Main {
         double totalExpense = 0.0;
 
         //initialise expense values
-        double food = 0.0;
-        double drink = 0.0;
-        double ent = 0.0;
-        double subs = 0.0;
-        double petrol = 0.0;
-        double bills = 0.0;
-        double gifts = 0.0;
-        double other = 0.0;
+        double[] catExpense = {0,0,0,0,0,0,0,0};
 
         System.out.println("");
         System.out.println("==================================================");
 
         //ask for inputs of amount spent for different categories
         do {
-            System.out.println("Choose a category for your expenses, or enter a negative number to continue.");
-            System.out.println("\t1. Food");
+            System.out.println("Choose a category for your expenses, or continue.");
+	        System.out.println("\t1. Food");
             System.out.println("\t2. Drink");
             System.out.println("\t3. Entertainment");
             System.out.println("\t4. Subscriptions");
@@ -41,12 +34,13 @@ public class Main {
             System.out.println("\t6. Bills");
             System.out.println("\t7. Gifts");
             System.out.println("\t8. Other");
+	        System.out.println("\t9. Continue");
 
             //take category value, or continue
             Scanner category = new Scanner(System.in);
             int userCat = category.nextInt();
 
-            if (userCat<=0) {
+            if (userCat==9) {
                 break;
             }
 
@@ -60,28 +54,28 @@ public class Main {
             //assign the expense to the right category
             switch (userCat) {
                 case 1:
-                    food += expense;
+                    catExpense[0] += expense;
                     break;
                 case 2:
-                    drink += expense;
+                    catExpense[1] += expense;
                     break;
                 case 3:
-                    ent += expense;
+                    catExpense[2] += expense;
                     break;
                 case 4:
-                    subs += expense;
+                    catExpense[3] += expense;
                     break;
                 case 5:
-                    petrol += expense;
+                    catExpense[4] += expense;
                     break;
                 case 6:
-                    bills += expense;
+                    catExpense[5] += expense;
                     break;
                 case 7:
-                    gifts += expense;
+                    catExpense[6] += expense;
                     break;
                 case 8:
-                    other += expense;
+                    catExpense[7] += expense;
                     break;
                 default:
                     break;
@@ -91,15 +85,12 @@ public class Main {
         } while (expense >= 0);
 
         //generate percentages for each category
-        double percFood = 100 * (food/totalExpense);
-        double percDrink = 100 * (drink/totalExpense);
-        double percEnt = 100 * (ent/totalExpense);
-        double percSubs = 100 * (subs/totalExpense);
-        double percPetrol = 100 * (petrol/totalExpense);
-        double percBills = 100 * (bills/totalExpense);
-        double percGifts = 100 * (gifts/totalExpense);
-        double percOther = 100 * (other/totalExpense);
-
+        double[] percExpense = {0,0,0,0,0,0,0,0};
+        for (int i=0; i<8; i++) {
+            if (catExpense[i] != 0) {
+                percExpense[i] = 100 * (catExpense[i] / totalExpense);
+            };
+        }
 
         // INCOME ------------------------------------------------------------------------------
 
@@ -107,42 +98,41 @@ public class Main {
         double income;
         double totalIncome = 0.0;
 
-        double work = 0.0;
-        double tuition = 0.0;
-        double other_inc = 0.0;
+        double[] catIncome = {0,0,0};
 
         //ask for income values for each category
         do {
-            System.out.println("Choose a category for your income, or enter a negative number to continue.");
+            System.out.println("Choose a category for your income, or continue.");
             System.out.println("\t1. Work");
             System.out.println("\t2. Tutoring");
             System.out.println("\t3. Other");
+            System.out.println("\t4. Continue");
 
             //take category value, or continue
             Scanner incomeCat = new Scanner(System.in);
             int userCat = incomeCat.nextInt();
 
-            if (userCat<=0) {
+            if (userCat==4) {
                 break;
             }
 
             System.out.println("");
             //take income value
             Scanner userInc = new Scanner(System.in);
-            System.out.println("Enter the amount for this expense.");
+            System.out.println("Enter the amount for this income.");
             income = userInc.nextDouble();
             totalIncome += income;
 
             //assign the expense to the right category
             switch (userCat) {
                 case 1:
-                    work += income;
+                    catIncome[0] += income;
                     break;
                 case 2:
-                    tuition += income;
+                    catIncome[1] += income;
                     break;
                 case 3:
-                    other_inc += income;
+                    catIncome[2] += income;
                     break;
                 default:
                     break;
@@ -151,9 +141,13 @@ public class Main {
 
         } while (income >= 0);
 
-        double percWork = 100 * (work/totalIncome);
-        double percTuit = 100 * (tuition/totalIncome);
-        double percOtherInc = 100 * (other_inc/totalIncome);
+        //generate percentages of income
+        double[] percIncome = {0,0,0};
+        for (int i=0; i<3; i++) {
+            if (catIncome[i] != 0) {
+                percIncome[i] = 100 * (catIncome[i] / totalIncome);
+            }
+        }
 
 
         // RESULTS --------------------------------------------------------------------------
@@ -179,15 +173,20 @@ public class Main {
         System.out.println("");
 
         //display percentages (spending)
-        System.out.printf("Food: %.1f %% ($%.2f)\n", percFood,food);
-        System.out.printf("Drink: %.1f %% ($%.2f)\n", percDrink,drink);
-        System.out.printf("Entertainment: %.1f %% ($%.2f)\n",percEnt,ent);
-        System.out.printf("Subscriptions: %.1f %% ($%.2f)\n",percSubs,subs);
-        System.out.printf("Petrol: %.1f %% ($%.2f)\n", percPetrol,petrol);
-        System.out.printf("Bills: %.1f %% ($%.2f)\n", percBills,bills);
-        System.out.printf("Gifts: %.1f %% ($%.2f)\n", percGifts,gifts);
-        System.out.printf("Other: %.1f %% ($%.2f)\n", percOther,other);
+        String[] catExpenseStr = {"Food","Drink","Entertainment","Subscriptions","Petrol/Parking","Bills","Gifts","Other"};
+        int j = 0;
+        for (int i=0; i<8; i++) {
+            if (percExpense[i] != 0) {
+                System.out.printf("%s: %.1f %% ($%.2f)\n", catExpenseStr[i],percExpense[i],catExpense[i]);
+                j++;
+            }
+        }
 
+        if (j==0) {
+            System.out.println("You didn't spend any money this month.");
+        }
+
+        //display total expenses
         System.out.println("");
         System.out.printf("Total Expenses: $%.2f\n", totalExpense);
         System.out.println("==================================================");
@@ -200,9 +199,18 @@ public class Main {
         double percSpent = 100 * (totalExpense/totalIncome);
 
         //display percentages (income)
-        System.out.printf("Work: %.1f %% ($%.2f)\n", percWork, work);
-        System.out.printf("Tuition: %.1f %% ($%.2f)\n", percTuit,tuition);
-        System.out.printf("Other: %.1f %% ($%.2f)\n",percOtherInc,other_inc);
+        String[] catIncomeStr = {"Work","Tuition","Other"};
+        int k = 0;
+        for (int i=0; i<3; i++) {
+            if (percIncome[i] != 0) {
+                System.out.printf("%s: %.1f %% ($%.2f)\n", catIncomeStr[i],percIncome[i],catIncome[i]);
+                k++;
+            }
+        }
+
+        if (k==0) {
+            System.out.println("You didn't earn any money this month.");
+        }
 
         System.out.println("");
         System.out.printf("Total Income: $%.2f\n", totalIncome);
