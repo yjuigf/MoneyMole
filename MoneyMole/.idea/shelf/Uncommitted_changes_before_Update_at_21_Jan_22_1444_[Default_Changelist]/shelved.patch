@@ -1,0 +1,1236 @@
+Index: ../Money Mole/app/src/test/java/com/example/moneymole/ExampleUnitTest.java
+===================================================================
+diff --git a/../Money Mole/app/src/test/java/com/example/moneymole/ExampleUnitTest.java b/../Money Mole/app/src/test/java/com/example/moneymole/ExampleUnitTest.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/test/java/com/example/moneymole/ExampleUnitTest.java	
++++ /dev/null	
+@@ -1,17 +0,0 @@
+-package com.example.moneymole;
+-
+-import org.junit.Test;
+-
+-import static org.junit.Assert.*;
+-
+-/**
+- * Example local unit test, which will execute on the development machine (host).
+- *
+- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+- */
+-public class ExampleUnitTest {
+-    @Test
+-    public void addition_isCorrect() {
+-        assertEquals(4, 2 + 2);
+-    }
+-}
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/drawable/ic_notifications_black_24dp.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/drawable/ic_notifications_black_24dp.xml b/../Money Mole/app/src/main/res/drawable/ic_notifications_black_24dp.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/drawable/ic_notifications_black_24dp.xml	
++++ /dev/null	
+@@ -1,9 +0,0 @@
+-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:width="24dp"
+-    android:height="24dp"
+-    android:viewportWidth="24.0"
+-    android:viewportHeight="24.0">
+-    <path
+-        android:fillColor="#FF000000"
+-        android:pathData="M12,22c1.1,0 2,-0.9 2,-2h-4c0,1.1 0.89,2 2,2zM18,16v-5c0,-3.07 -1.64,-5.64 -4.5,-6.32L13.5,4c0,-0.83 -0.67,-1.5 -1.5,-1.5s-1.5,0.67 -1.5,1.5v0.68C7.63,5.36 6,7.92 6,11v5l-2,2v1h16v-1l-2,-2z" />
+-</vector>
+Index: ../Money Mole/app/proguard-rules.pro
+===================================================================
+diff --git a/../Money Mole/app/proguard-rules.pro b/../Money Mole/app/proguard-rules.pro
+deleted file mode 100644
+--- a/../Money Mole/app/proguard-rules.pro	
++++ /dev/null	
+@@ -1,21 +0,0 @@
+-# Add project specific ProGuard rules here.
+-# You can control the set of applied configuration files using the
+-# proguardFiles setting in build.gradle.
+-#
+-# For more details, see
+-#   http://developer.android.com/guide/developing/tools/proguard.html
+-
+-# If your project uses WebView with JS, uncomment the following
+-# and specify the fully qualified class name to the JavaScript interface
+-# class:
+-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+-#   public *;
+-#}
+-
+-# Uncomment this to preserve the line number information for
+-# debugging stack traces.
+-#-keepattributes SourceFile,LineNumberTable
+-
+-# If you keep the line number information, uncomment this to
+-# hide the original source file name.
+-#-renamesourcefileattribute SourceFile
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/drawable-v24/ic_launcher_foreground.xml b/../Money Mole/app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/drawable-v24/ic_launcher_foreground.xml	
++++ /dev/null	
+@@ -1,30 +0,0 @@
+-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:aapt="http://schemas.android.com/aapt"
+-    android:width="108dp"
+-    android:height="108dp"
+-    android:viewportWidth="108"
+-    android:viewportHeight="108">
+-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
+-        <aapt:attr name="android:fillColor">
+-            <gradient
+-                android:endX="85.84757"
+-                android:endY="92.4963"
+-                android:startX="42.9492"
+-                android:startY="49.59793"
+-                android:type="linear">
+-                <item
+-                    android:color="#44000000"
+-                    android:offset="0.0" />
+-                <item
+-                    android:color="#00000000"
+-                    android:offset="1.0" />
+-            </gradient>
+-        </aapt:attr>
+-    </path>
+-    <path
+-        android:fillColor="#FFFFFF"
+-        android:fillType="nonZero"
+-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
+-        android:strokeWidth="1"
+-        android:strokeColor="#00000000" />
+-</vector>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/java/com/example/moneymole/MainActivity.java
+===================================================================
+diff --git a/../Money Mole/app/src/main/java/com/example/moneymole/MainActivity.java b/../Money Mole/app/src/main/java/com/example/moneymole/MainActivity.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/java/com/example/moneymole/MainActivity.java	
++++ /dev/null	
+@@ -1,37 +0,0 @@
+-package com.example.moneymole;
+-
+-import android.os.Bundle;
+-
+-import com.google.android.material.bottomnavigation.BottomNavigationView;
+-
+-import androidx.appcompat.app.AppCompatActivity;
+-import androidx.navigation.NavController;
+-import androidx.navigation.Navigation;
+-import androidx.navigation.ui.AppBarConfiguration;
+-import androidx.navigation.ui.NavigationUI;
+-
+-import com.example.moneymole.databinding.ActivityMainBinding;
+-
+-public class MainActivity extends AppCompatActivity {
+-
+-    private ActivityMainBinding binding;
+-
+-    @Override
+-    protected void onCreate(Bundle savedInstanceState) {
+-        super.onCreate(savedInstanceState);
+-
+-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+-        setContentView(binding.getRoot());
+-
+-        BottomNavigationView navView = findViewById(R.id.nav_view);
+-        // Passing each menu ID as a set of Ids because each
+-        // menu should be considered as top level destinations.
+-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+-                .build();
+-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
+-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+-        NavigationUI.setupWithNavController(binding.navView, navController);
+-    }
+-
+-}
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/drawable/ic_dashboard_black_24dp.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/drawable/ic_dashboard_black_24dp.xml b/../Money Mole/app/src/main/res/drawable/ic_dashboard_black_24dp.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/drawable/ic_dashboard_black_24dp.xml	
++++ /dev/null	
+@@ -1,9 +0,0 @@
+-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:width="24dp"
+-    android:height="24dp"
+-    android:viewportWidth="24.0"
+-    android:viewportHeight="24.0">
+-    <path
+-        android:fillColor="#FF000000"
+-        android:pathData="M3,13h8L11,3L3,3v10zM3,21h8v-6L3,15v6zM13,21h8L21,11h-8v10zM13,3v6h8L21,3h-8z" />
+-</vector>
+Index: ../Money Mole/app/src/main/res/values/themes.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/values/themes.xml b/../Money Mole/app/src/main/res/values/themes.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/values/themes.xml	
++++ /dev/null	
+@@ -1,16 +0,0 @@
+-<resources xmlns:tools="http://schemas.android.com/tools">
+-    <!-- Base application theme. -->
+-    <style name="Theme.MoneyMole" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+-        <!-- Primary brand color. -->
+-        <item name="colorPrimary">@color/purple_500</item>
+-        <item name="colorPrimaryVariant">@color/purple_700</item>
+-        <item name="colorOnPrimary">@color/white</item>
+-        <!-- Secondary brand color. -->
+-        <item name="colorSecondary">@color/teal_200</item>
+-        <item name="colorSecondaryVariant">@color/teal_700</item>
+-        <item name="colorOnSecondary">@color/black</item>
+-        <!-- Status bar color. -->
+-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+-        <!-- Customize your theme here. -->
+-    </style>
+-</resources>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/layout/activity_main.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/layout/activity_main.xml b/../Money Mole/app/src/main/res/layout/activity_main.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/layout/activity_main.xml	
++++ /dev/null	
+@@ -1,33 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    android:id="@+id/container"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    android:paddingTop="?attr/actionBarSize">
+-
+-    <com.google.android.material.bottomnavigation.BottomNavigationView
+-        android:id="@+id/nav_view"
+-        android:layout_width="0dp"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="0dp"
+-        android:layout_marginEnd="0dp"
+-        android:background="?android:attr/windowBackground"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintLeft_toLeftOf="parent"
+-        app:layout_constraintRight_toRightOf="parent"
+-        app:menu="@menu/bottom_nav_menu" />
+-
+-    <fragment
+-        android:id="@+id/nav_host_fragment_activity_main"
+-        android:name="androidx.navigation.fragment.NavHostFragment"
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        app:defaultNavHost="true"
+-        app:layout_constraintBottom_toTopOf="@id/nav_view"
+-        app:layout_constraintLeft_toLeftOf="parent"
+-        app:layout_constraintRight_toRightOf="parent"
+-        app:layout_constraintTop_toTopOf="parent"
+-        app:navGraph="@navigation/mobile_navigation" />
+-
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/layout/fragment_home.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/layout/fragment_home.xml b/../Money Mole/app/src/main/res/layout/fragment_home.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/layout/fragment_home.xml	
++++ /dev/null	
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".ui.home.HomeFragment">
+-
+-    <TextView
+-        android:id="@+id/text_home"
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="8dp"
+-        android:textAlignment="center"
+-        android:textSize="20sp"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsFragment.java
+===================================================================
+diff --git a/../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsFragment.java b/../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsFragment.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsFragment.java	
++++ /dev/null	
+@@ -1,46 +0,0 @@
+-package com.example.moneymole.ui.notifications;
+-
+-import android.os.Bundle;
+-import android.view.LayoutInflater;
+-import android.view.View;
+-import android.view.ViewGroup;
+-import android.widget.TextView;
+-
+-import androidx.annotation.NonNull;
+-import androidx.annotation.Nullable;
+-import androidx.fragment.app.Fragment;
+-import androidx.lifecycle.Observer;
+-import androidx.lifecycle.ViewModelProvider;
+-
+-import com.example.moneymole.R;
+-import com.example.moneymole.databinding.FragmentNotificationsBinding;
+-
+-public class NotificationsFragment extends Fragment {
+-
+-    private NotificationsViewModel notificationsViewModel;
+-    private FragmentNotificationsBinding binding;
+-
+-    public View onCreateView(@NonNull LayoutInflater inflater,
+-                             ViewGroup container, Bundle savedInstanceState) {
+-        notificationsViewModel =
+-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+-
+-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+-        View root = binding.getRoot();
+-
+-        final TextView textView = binding.textNotifications;
+-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+-            @Override
+-            public void onChanged(@Nullable String s) {
+-                textView.setText(s);
+-            }
+-        });
+-        return root;
+-    }
+-
+-    @Override
+-    public void onDestroyView() {
+-        super.onDestroyView();
+-        binding = null;
+-    }
+-}
+\ No newline at end of file
+Index: ../Money Mole/gradle/wrapper/gradle-wrapper.properties
+===================================================================
+diff --git a/../Money Mole/gradle/wrapper/gradle-wrapper.properties b/../Money Mole/gradle/wrapper/gradle-wrapper.properties
+deleted file mode 100644
+--- a/../Money Mole/gradle/wrapper/gradle-wrapper.properties	
++++ /dev/null	
+@@ -1,6 +0,0 @@
+-#Thu Jan 20 22:29:24 AEDT 2022
+-distributionBase=GRADLE_USER_HOME
+-distributionUrl=https\://services.gradle.org/distributions/gradle-7.0.2-bin.zip
+-distributionPath=wrapper/dists
+-zipStorePath=wrapper/dists
+-zipStoreBase=GRADLE_USER_HOME
+Index: ../Money Mole/app/src/main/res/drawable/ic_home_black_24dp.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/drawable/ic_home_black_24dp.xml b/../Money Mole/app/src/main/res/drawable/ic_home_black_24dp.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/drawable/ic_home_black_24dp.xml	
++++ /dev/null	
+@@ -1,9 +0,0 @@
+-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:width="24dp"
+-    android:height="24dp"
+-    android:viewportWidth="24.0"
+-    android:viewportHeight="24.0">
+-    <path
+-        android:fillColor="#FF000000"
+-        android:pathData="M10,20v-6h4v6h5v-8h3L12,3 2,12h3v8z" />
+-</vector>
+Index: ../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml b/../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	
++++ /dev/null	
+@@ -1,5 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+-    <background android:drawable="@drawable/ic_launcher_background" />
+-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+-</adaptive-icon>
+\ No newline at end of file
+Index: ../Money Mole/.idea/misc.xml
+===================================================================
+diff --git a/../Money Mole/.idea/misc.xml b/../Money Mole/.idea/misc.xml
+deleted file mode 100644
+--- a/../Money Mole/.idea/misc.xml	
++++ /dev/null	
+@@ -1,16 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="DesignSurface">
+-    <option name="filePathToZoomLevelMap">
+-      <map>
+-        <entry key="..\:/Users/hanna/OneDrive/Documents/projects/budgetProgram/Money Mole/app/src/main/res/layout/activity_main.xml" value="0.17135416666666667" />
+-      </map>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/build/classes" />
+-  </component>
+-  <component name="ProjectType">
+-    <option name="id" value="Android" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Money Mole/app/src/androidTest/java/com/example/moneymole/ExampleInstrumentedTest.java
+===================================================================
+diff --git a/../Money Mole/app/src/androidTest/java/com/example/moneymole/ExampleInstrumentedTest.java b/../Money Mole/app/src/androidTest/java/com/example/moneymole/ExampleInstrumentedTest.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/androidTest/java/com/example/moneymole/ExampleInstrumentedTest.java	
++++ /dev/null	
+@@ -1,26 +0,0 @@
+-package com.example.moneymole;
+-
+-import android.content.Context;
+-
+-import androidx.test.platform.app.InstrumentationRegistry;
+-import androidx.test.ext.junit.runners.AndroidJUnit4;
+-
+-import org.junit.Test;
+-import org.junit.runner.RunWith;
+-
+-import static org.junit.Assert.*;
+-
+-/**
+- * Instrumented test, which will execute on an Android device.
+- *
+- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+- */
+-@RunWith(AndroidJUnit4.class)
+-public class ExampleInstrumentedTest {
+-    @Test
+-    public void useAppContext() {
+-        // Context of the app under test.
+-        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+-        assertEquals("com.example.moneymole", appContext.getPackageName());
+-    }
+-}
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/menu/bottom_nav_menu.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/menu/bottom_nav_menu.xml b/../Money Mole/app/src/main/res/menu/bottom_nav_menu.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/menu/bottom_nav_menu.xml	
++++ /dev/null	
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+-
+-    <item
+-        android:id="@+id/navigation_home"
+-        android:icon="@drawable/ic_home_black_24dp"
+-        android:title="@string/title_home" />
+-
+-    <item
+-        android:id="@+id/navigation_dashboard"
+-        android:icon="@drawable/ic_dashboard_black_24dp"
+-        android:title="@string/title_dashboard" />
+-
+-    <item
+-        android:id="@+id/navigation_notifications"
+-        android:icon="@drawable/ic_notifications_black_24dp"
+-        android:title="@string/title_notifications" />
+-
+-</menu>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/values/dimens.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/values/dimens.xml b/../Money Mole/app/src/main/res/values/dimens.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/values/dimens.xml	
++++ /dev/null	
+@@ -1,5 +0,0 @@
+-<resources>
+-    <!-- Default screen margins, per the Android Design guidelines. -->
+-    <dimen name="activity_horizontal_margin">16dp</dimen>
+-    <dimen name="activity_vertical_margin">16dp</dimen>
+-</resources>
+\ No newline at end of file
+Index: ../Money Mole/app/build.gradle
+===================================================================
+diff --git a/../Money Mole/app/build.gradle b/../Money Mole/app/build.gradle
+deleted file mode 100644
+--- a/../Money Mole/app/build.gradle	
++++ /dev/null	
+@@ -1,45 +0,0 @@
+-plugins {
+-    id 'com.android.application'
+-}
+-
+-android {
+-    compileSdk 31
+-
+-    defaultConfig {
+-        applicationId "com.example.moneymole"
+-        minSdk 24
+-        targetSdk 31
+-        versionCode 1
+-        versionName "1.0"
+-
+-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+-    }
+-
+-    buildTypes {
+-        release {
+-            minifyEnabled false
+-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+-        }
+-    }
+-    compileOptions {
+-        sourceCompatibility JavaVersion.VERSION_1_8
+-        targetCompatibility JavaVersion.VERSION_1_8
+-    }
+-    buildFeatures {
+-        viewBinding true
+-    }
+-}
+-
+-dependencies {
+-
+-    implementation 'androidx.appcompat:appcompat:1.4.1'
+-    implementation 'com.google.android.material:material:1.5.0'
+-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+-    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+-    implementation 'androidx.navigation:navigation-ui:2.3.5'
+-    testImplementation 'junit:junit:4.+'
+-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+-}
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/AndroidManifest.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/AndroidManifest.xml b/../Money Mole/app/src/main/AndroidManifest.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/AndroidManifest.xml	
++++ /dev/null	
+@@ -1,24 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+-    package="com.example.moneymole">
+-
+-    <application
+-        android:allowBackup="true"
+-        android:icon="@mipmap/ic_launcher"
+-        android:label="@string/app_name"
+-        android:roundIcon="@mipmap/ic_launcher_round"
+-        android:supportsRtl="true"
+-        android:theme="@style/Theme.MoneyMole">
+-        <activity
+-            android:name=".MainActivity"
+-            android:exported="true"
+-            android:label="@string/app_name">
+-            <intent-filter>
+-                <action android:name="android.intent.action.MAIN" />
+-
+-                <category android:name="android.intent.category.LAUNCHER" />
+-            </intent-filter>
+-        </activity>
+-    </application>
+-
+-</manifest>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/values/colors.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/values/colors.xml b/../Money Mole/app/src/main/res/values/colors.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/values/colors.xml	
++++ /dev/null	
+@@ -1,10 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<resources>
+-    <color name="purple_200">#FFBB86FC</color>
+-    <color name="purple_500">#FF6200EE</color>
+-    <color name="purple_700">#FF3700B3</color>
+-    <color name="teal_200">#FF03DAC5</color>
+-    <color name="teal_700">#FF018786</color>
+-    <color name="black">#FF000000</color>
+-    <color name="white">#FFFFFFFF</color>
+-</resources>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardFragment.java
+===================================================================
+diff --git a/../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardFragment.java b/../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardFragment.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardFragment.java	
++++ /dev/null	
+@@ -1,46 +0,0 @@
+-package com.example.moneymole.ui.dashboard;
+-
+-import android.os.Bundle;
+-import android.view.LayoutInflater;
+-import android.view.View;
+-import android.view.ViewGroup;
+-import android.widget.TextView;
+-
+-import androidx.annotation.NonNull;
+-import androidx.annotation.Nullable;
+-import androidx.fragment.app.Fragment;
+-import androidx.lifecycle.Observer;
+-import androidx.lifecycle.ViewModelProvider;
+-
+-import com.example.moneymole.R;
+-import com.example.moneymole.databinding.FragmentDashboardBinding;
+-
+-public class DashboardFragment extends Fragment {
+-
+-    private DashboardViewModel dashboardViewModel;
+-    private FragmentDashboardBinding binding;
+-
+-    public View onCreateView(@NonNull LayoutInflater inflater,
+-                             ViewGroup container, Bundle savedInstanceState) {
+-        dashboardViewModel =
+-                new ViewModelProvider(this).get(DashboardViewModel.class);
+-
+-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+-        View root = binding.getRoot();
+-
+-        final TextView textView = binding.textDashboard;
+-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+-            @Override
+-            public void onChanged(@Nullable String s) {
+-                textView.setText(s);
+-            }
+-        });
+-        return root;
+-    }
+-
+-    @Override
+-    public void onDestroyView() {
+-        super.onDestroyView();
+-        binding = null;
+-    }
+-}
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/values-night/themes.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/values-night/themes.xml b/../Money Mole/app/src/main/res/values-night/themes.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/values-night/themes.xml	
++++ /dev/null	
+@@ -1,16 +0,0 @@
+-<resources xmlns:tools="http://schemas.android.com/tools">
+-    <!-- Base application theme. -->
+-    <style name="Theme.MoneyMole" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+-        <!-- Primary brand color. -->
+-        <item name="colorPrimary">@color/purple_200</item>
+-        <item name="colorPrimaryVariant">@color/purple_700</item>
+-        <item name="colorOnPrimary">@color/black</item>
+-        <!-- Secondary brand color. -->
+-        <item name="colorSecondary">@color/teal_200</item>
+-        <item name="colorSecondaryVariant">@color/teal_200</item>
+-        <item name="colorOnSecondary">@color/black</item>
+-        <!-- Status bar color. -->
+-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+-        <!-- Customize your theme here. -->
+-    </style>
+-</resources>
+\ No newline at end of file
+Index: ../Money Mole/.gitignore
+===================================================================
+diff --git a/../Money Mole/.gitignore b/../Money Mole/.gitignore
+deleted file mode 100644
+--- a/../Money Mole/.gitignore	
++++ /dev/null	
+@@ -1,15 +0,0 @@
+-*.iml
+-.gradle
+-/local.properties
+-/.idea/caches
+-/.idea/libraries
+-/.idea/modules.xml
+-/.idea/workspace.xml
+-/.idea/navEditor.xml
+-/.idea/assetWizardSettings.xml
+-.DS_Store
+-/build
+-/captures
+-.externalNativeBuild
+-.cxx
+-local.properties
+Index: ../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml b/../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	
++++ /dev/null	
+@@ -1,5 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+-    <background android:drawable="@drawable/ic_launcher_background" />
+-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+-</adaptive-icon>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsViewModel.java
+===================================================================
+diff --git a/../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsViewModel.java b/../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsViewModel.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/java/com/example/moneymole/ui/notifications/NotificationsViewModel.java	
++++ /dev/null	
+@@ -1,19 +0,0 @@
+-package com.example.moneymole.ui.notifications;
+-
+-import androidx.lifecycle.LiveData;
+-import androidx.lifecycle.MutableLiveData;
+-import androidx.lifecycle.ViewModel;
+-
+-public class NotificationsViewModel extends ViewModel {
+-
+-    private MutableLiveData<String> mText;
+-
+-    public NotificationsViewModel() {
+-        mText = new MutableLiveData<>();
+-        mText.setValue("This is notifications fragment");
+-    }
+-
+-    public LiveData<String> getText() {
+-        return mText;
+-    }
+-}
+\ No newline at end of file
+Index: ../Money Mole/gradle.properties
+===================================================================
+diff --git a/../Money Mole/gradle.properties b/../Money Mole/gradle.properties
+deleted file mode 100644
+--- a/../Money Mole/gradle.properties	
++++ /dev/null	
+@@ -1,19 +0,0 @@
+-# Project-wide Gradle settings.
+-# IDE (e.g. Android Studio) users:
+-# Gradle settings configured through the IDE *will override*
+-# any settings specified in this file.
+-# For more details on how to configure your build environment visit
+-# http://www.gradle.org/docs/current/userguide/build_environment.html
+-# Specifies the JVM arguments used for the daemon process.
+-# The setting is particularly useful for tweaking memory settings.
+-org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+-# When configured, Gradle will run in incubating parallel mode.
+-# This option should only be used with decoupled projects. More details, visit
+-# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+-# org.gradle.parallel=true
+-# AndroidX package structure to make it clearer which packages are bundled with the
+-# Android operating system, and which are packaged with your app"s APK
+-# https://developer.android.com/topic/libraries/support-library/androidx-rn
+-android.useAndroidX=true
+-# Automatically convert third-party libraries to use AndroidX
+-android.enableJetifier=true
+\ No newline at end of file
+Index: ../Money Mole/build.gradle
+===================================================================
+diff --git a/../Money Mole/build.gradle b/../Money Mole/build.gradle
+deleted file mode 100644
+--- a/../Money Mole/build.gradle	
++++ /dev/null	
+@@ -1,17 +0,0 @@
+-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+-buildscript {
+-    repositories {
+-        google()
+-        mavenCentral()
+-    }
+-    dependencies {
+-        classpath "com.android.tools.build:gradle:7.0.0"
+-
+-        // NOTE: Do not place your application dependencies here; they belong
+-        // in the individual module build.gradle files
+-    }
+-}
+-
+-task clean(type: Delete) {
+-    delete rootProject.buildDir
+-}
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/values/strings.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/values/strings.xml b/../Money Mole/app/src/main/res/values/strings.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/values/strings.xml	
++++ /dev/null	
+@@ -1,6 +0,0 @@
+-<resources>
+-    <string name="app_name">Money Mole</string>
+-    <string name="title_home">Home</string>
+-    <string name="title_dashboard">Dashboard</string>
+-    <string name="title_notifications">Notifications</string>
+-</resources>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/navigation/mobile_navigation.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/navigation/mobile_navigation.xml b/../Money Mole/app/src/main/res/navigation/mobile_navigation.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/navigation/mobile_navigation.xml	
++++ /dev/null	
+@@ -1,25 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:id="@+id/mobile_navigation"
+-    app:startDestination="@+id/navigation_home">
+-
+-    <fragment
+-        android:id="@+id/navigation_home"
+-        android:name="com.example.moneymole.ui.home.HomeFragment"
+-        android:label="@string/title_home"
+-        tools:layout="@layout/fragment_home" />
+-
+-    <fragment
+-        android:id="@+id/navigation_dashboard"
+-        android:name="com.example.moneymole.ui.dashboard.DashboardFragment"
+-        android:label="@string/title_dashboard"
+-        tools:layout="@layout/fragment_dashboard" />
+-
+-    <fragment
+-        android:id="@+id/navigation_notifications"
+-        android:name="com.example.moneymole.ui.notifications.NotificationsFragment"
+-        android:label="@string/title_notifications"
+-        tools:layout="@layout/fragment_notifications" />
+-</navigation>
+\ No newline at end of file
+Index: ../Money Mole/.idea/compiler.xml
+===================================================================
+diff --git a/../Money Mole/.idea/compiler.xml b/../Money Mole/.idea/compiler.xml
+deleted file mode 100644
+--- a/../Money Mole/.idea/compiler.xml	
++++ /dev/null	
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="CompilerConfiguration">
+-    <bytecodeTargetLevel target="11" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/layout/fragment_dashboard.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/layout/fragment_dashboard.xml b/../Money Mole/app/src/main/res/layout/fragment_dashboard.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/layout/fragment_dashboard.xml	
++++ /dev/null	
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".ui.dashboard.DashboardFragment">
+-
+-    <TextView
+-        android:id="@+id/text_dashboard"
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="8dp"
+-        android:textAlignment="center"
+-        android:textSize="20sp"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: ../Money Mole/app/.gitignore
+===================================================================
+diff --git a/../Money Mole/app/.gitignore b/../Money Mole/app/.gitignore
+deleted file mode 100644
+--- a/../Money Mole/app/.gitignore	
++++ /dev/null	
+@@ -1,1 +0,0 @@
+-/build
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardViewModel.java
+===================================================================
+diff --git a/../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardViewModel.java b/../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardViewModel.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/java/com/example/moneymole/ui/dashboard/DashboardViewModel.java	
++++ /dev/null	
+@@ -1,19 +0,0 @@
+-package com.example.moneymole.ui.dashboard;
+-
+-import androidx.lifecycle.LiveData;
+-import androidx.lifecycle.MutableLiveData;
+-import androidx.lifecycle.ViewModel;
+-
+-public class DashboardViewModel extends ViewModel {
+-
+-    private MutableLiveData<String> mText;
+-
+-    public DashboardViewModel() {
+-        mText = new MutableLiveData<>();
+-        mText.setValue("This is dashboard fragment");
+-    }
+-
+-    public LiveData<String> getText() {
+-        return mText;
+-    }
+-}
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/res/drawable/ic_launcher_background.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/drawable/ic_launcher_background.xml b/../Money Mole/app/src/main/res/drawable/ic_launcher_background.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/drawable/ic_launcher_background.xml	
++++ /dev/null	
+@@ -1,170 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:width="108dp"
+-    android:height="108dp"
+-    android:viewportWidth="108"
+-    android:viewportHeight="108">
+-    <path
+-        android:fillColor="#3DDC84"
+-        android:pathData="M0,0h108v108h-108z" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M9,0L9,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,0L19,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M29,0L29,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M39,0L39,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M49,0L49,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M59,0L59,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M69,0L69,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M79,0L79,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M89,0L89,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M99,0L99,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,9L108,9"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,19L108,19"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,29L108,29"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,39L108,39"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,49L108,49"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,59L108,59"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,69L108,69"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,79L108,79"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,89L108,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,99L108,99"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,29L89,29"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,39L89,39"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,49L89,49"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,59L89,59"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,69L89,69"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,79L89,79"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M29,19L29,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M39,19L39,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M49,19L49,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M59,19L59,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M69,19L69,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M79,19L79,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-</vector>
+Index: ../Money Mole/app/src/main/res/layout/fragment_notifications.xml
+===================================================================
+diff --git a/../Money Mole/app/src/main/res/layout/fragment_notifications.xml b/../Money Mole/app/src/main/res/layout/fragment_notifications.xml
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/res/layout/fragment_notifications.xml	
++++ /dev/null	
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".ui.notifications.NotificationsFragment">
+-
+-    <TextView
+-        android:id="@+id/text_notifications"
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="8dp"
+-        android:textAlignment="center"
+-        android:textSize="20sp"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: ../Money Mole/.idea/gradle.xml
+===================================================================
+diff --git a/../Money Mole/.idea/gradle.xml b/../Money Mole/.idea/gradle.xml
+deleted file mode 100644
+--- a/../Money Mole/.idea/gradle.xml	
++++ /dev/null	
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="GradleSettings">
+-    <option name="linkedExternalProjectsSettings">
+-      <GradleProjectSettings>
+-        <option name="testRunner" value="GRADLE" />
+-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="modules">
+-          <set>
+-            <option value="$PROJECT_DIR$" />
+-            <option value="$PROJECT_DIR$/app" />
+-          </set>
+-        </option>
+-        <option name="resolveModulePerSourceSet" value="false" />
+-      </GradleProjectSettings>
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeFragment.java
+===================================================================
+diff --git a/../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeFragment.java b/../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeFragment.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeFragment.java	
++++ /dev/null	
+@@ -1,46 +0,0 @@
+-package com.example.moneymole.ui.home;
+-
+-import android.os.Bundle;
+-import android.view.LayoutInflater;
+-import android.view.View;
+-import android.view.ViewGroup;
+-import android.widget.TextView;
+-
+-import androidx.annotation.NonNull;
+-import androidx.annotation.Nullable;
+-import androidx.fragment.app.Fragment;
+-import androidx.lifecycle.Observer;
+-import androidx.lifecycle.ViewModelProvider;
+-
+-import com.example.moneymole.R;
+-import com.example.moneymole.databinding.FragmentHomeBinding;
+-
+-public class HomeFragment extends Fragment {
+-
+-    private HomeViewModel homeViewModel;
+-    private FragmentHomeBinding binding;
+-
+-    public View onCreateView(@NonNull LayoutInflater inflater,
+-                             ViewGroup container, Bundle savedInstanceState) {
+-        homeViewModel =
+-                new ViewModelProvider(this).get(HomeViewModel.class);
+-
+-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+-        View root = binding.getRoot();
+-
+-        final TextView textView = binding.textHome;
+-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+-            @Override
+-            public void onChanged(@Nullable String s) {
+-                textView.setText(s);
+-            }
+-        });
+-        return root;
+-    }
+-
+-    @Override
+-    public void onDestroyView() {
+-        super.onDestroyView();
+-        binding = null;
+-    }
+-}
+\ No newline at end of file
+Index: ../Money Mole/settings.gradle
+===================================================================
+diff --git a/../Money Mole/settings.gradle b/../Money Mole/settings.gradle
+deleted file mode 100644
+--- a/../Money Mole/settings.gradle	
++++ /dev/null	
+@@ -1,10 +0,0 @@
+-dependencyResolutionManagement {
+-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+-    repositories {
+-        google()
+-        mavenCentral()
+-        jcenter() // Warning: this repository is going to shut down soon
+-    }
+-}
+-rootProject.name = "Money Mole"
+-include ':app'
+Index: ../Money Mole/.idea/vcs.xml
+===================================================================
+diff --git a/../Money Mole/.idea/vcs.xml b/../Money Mole/.idea/vcs.xml
+deleted file mode 100644
+--- a/../Money Mole/.idea/vcs.xml	
++++ /dev/null	
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeViewModel.java
+===================================================================
+diff --git a/../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeViewModel.java b/../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeViewModel.java
+deleted file mode 100644
+--- a/../Money Mole/app/src/main/java/com/example/moneymole/ui/home/HomeViewModel.java	
++++ /dev/null	
+@@ -1,19 +0,0 @@
+-package com.example.moneymole.ui.home;
+-
+-import androidx.lifecycle.LiveData;
+-import androidx.lifecycle.MutableLiveData;
+-import androidx.lifecycle.ViewModel;
+-
+-public class HomeViewModel extends ViewModel {
+-
+-    private MutableLiveData<String> mText;
+-
+-    public HomeViewModel() {
+-        mText = new MutableLiveData<>();
+-        mText.setValue("This is home fragment");
+-    }
+-
+-    public LiveData<String> getText() {
+-        return mText;
+-    }
+-}
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/.idea/.gitignore	
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
