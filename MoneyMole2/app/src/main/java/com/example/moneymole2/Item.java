@@ -6,6 +6,27 @@ public class Item {
     String itemName;
     Object[] itemHistory;
 
+    public Item(String itemName, Object[] itemHistory) {
+        this.itemName = itemName;
+        this.itemHistory = itemHistory;
+    }
+
+    public String getItemName() {
+        return itemName;
+    }
+
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
+    public Object[] getItemHistory() {
+        return itemHistory;
+    }
+
+    public void setItemHistory(Object[] itemHistory) {
+        this.itemHistory = itemHistory;
+    }
+
     public static void addHistoryPoint() {
         // TODO: addHistoryPoint method
         System.out.println("Add History Point method reached!");
