@@ -3,7 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/drawable/add.xml" value="0.1951388888888889" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/drawable/analysis.xml" value="0.30234375" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/drawable/history.xml" value="0.18680555555555556" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/activity_add_purchase.xml" value="0.1" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/fragment_add_purchase_confirm.xml" value="0.13638102524866105" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/fragment_add_purchase_input.xml" value="0.18" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/fragment_anaylsis.xml" value="0.1421193573068095" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/fragment_history.xml" value="0.18642350557244175" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/layout/fragment_settings.xml" value="0.10998469778117827" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/menu/bottom_menu.xml" value="0.4227405247813411" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24930555555555556" />
+        <entry key="..\:/Documents/Test Chamber 3/Android/budgetApp/MoneyMole2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.24930555555555556" />
         <entry key="..\:/Users/hanna/OneDrive/Documents/projects/budgetApp/MoneyMole2/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
       </map>
     </option>
