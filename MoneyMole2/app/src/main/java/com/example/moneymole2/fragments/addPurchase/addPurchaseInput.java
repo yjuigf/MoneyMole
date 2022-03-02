@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.moneymole2.R;
-import com.example.moneymole2.addPurchaseActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
@@ -60,7 +59,7 @@ public class addPurchaseInput extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         //Cancel and Confirm Buttons
-        cancelBtn = getView().findViewById(R.id.cancel);
+        cancelBtn = getView().findViewById(R.id.cancelItem);
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

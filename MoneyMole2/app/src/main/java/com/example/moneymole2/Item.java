@@ -27,8 +27,7 @@ public class Item {
         this.itemHistory = itemHistory;
     }
 
-    public static void addHistoryPoint() {
-        // TODO: addHistoryPoint method
-        System.out.println("Add History Point method reached!");
+    public void addHistoryPoint(String[] historyPoint) {
+        this.itemHistory[this.itemHistory.length - 1] = historyPoint;
     }
 }

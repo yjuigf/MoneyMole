@@ -60,9 +60,12 @@ public class Purchase {
         this.comments = comments;
     }
 
-    public static double calcTotalCost() {
-        // TODO: calcTotalCost method
-        System.out.println("Total Cost method reached!");
-        return 0;
+    public double calcTotalCost(int[] itemList) {
+        // TODO: transfer data from PurchaseDatabase for item prices
+        double output = 0;
+        for (int i=0; i<itemList.length; i++) {
+            output += items[itemList[i]].price;
+        }
+        return output;
     }
 }

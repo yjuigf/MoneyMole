@@ -5,7 +5,6 @@ import java.util.Date;
 public class HistoryPoint {
     // Contains the purchase instance of an object
 
-
     public HistoryPoint(double pointCost, Date pointDate, String pointPurchaseName) {
         this.pointCost = pointCost;
         this.pointDate = pointDate;

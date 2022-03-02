@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Add Purchase Button
-        addPurchaseBtn = findViewById(R.id.addPurchaseBtn);
+        addPurchaseBtn = findViewById(R.id.addPurchase);
         addPurchaseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

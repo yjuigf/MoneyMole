@@ -1,74 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.addPurchase.addPurchaseInput">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cancelItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:src="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/confirmItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:src="@drawable/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/cancelPurchase"
+            android:id="@+id/cancelItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
             android:layout_marginStart="50dp"
+            android:layout_marginBottom="50dp"
             android:clickable="true"
             android:src="@drawable/cancel"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/confirmPurchase"
+            android:id="@+id/confirmItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
             android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
             android:clickable="true"
             android:src="@drawable/confirm"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <EditText
-            android:id="@+id/purchaseNameInput"
+            android:id="@+id/itemNameInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Purchase Name"
+            android:text="Item  Name"
             tools:layout_editor_absoluteX="88dp"
             tools:layout_editor_absoluteY="239dp" />
 
         <EditText
-            android:id="@+id/purchaseDateInput"
+            android:id="@+id/itemPriceInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="date"
-            android:text="dd/mm/yyy"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="284dp" />
+            android:inputType="number"
+            android:text="Price"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="280dp" />
 
-        <Button
-            android:id="@+id/addItemBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            android:text="Add Item"
-            tools:layout_editor_absoluteX="143dp"
-            tools:layout_editor_absoluteY="350dp" />
-
-        <TextView
-            android:id="@+id/purchasePrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Price: "
-            tools:layout_editor_absoluteX="93dp"
-            tools:layout_editor_absoluteY="458dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
